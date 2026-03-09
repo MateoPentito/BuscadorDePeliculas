@@ -1,0 +1,151 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.nav-link {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3;
+}
+
+.nav-link li a:hover {
+    color: #ff9900;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+#inicio {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+#inicio h1 {
+    font-size: 36px;
+    color: #1e1e1e;
+    margin: 0;
+    font-weight: bold;
+}
+
+#input-pelicula {
+    width: 300px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+#input-pelicula:focus {
+    border-color: #ff9900;
+    box-shadow: 0 0 10px rgba(225, 153, 0, 0.4);
+}
+
+#boton-buscar {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#boton-buscar:hover{
+    background-color: #e68a00;
+    transform: translateY(-2px);
+}
+#resultado {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pelicula {
+    background-color: #1e1e1e;
+    color: #fff;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.pelicula:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 14px rgba(182, 4, 4, 0.898);
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.pelicula h3 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.pelicula p {
+    margin: 5px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.pelicula p strong {
+    color: #ff9900;
+}
+
+@media (max-width: 600px) {
+    .pelicula {
+        width: 100%;
+    }
+}
