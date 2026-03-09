@@ -50,6 +50,37 @@
     }
 }
 
+#categoria {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #aca6a6f9;
+}
+
+.categorias {
+    display: flex;
+    gap: 20px;
+}
+
+.categorias button {
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.categorias button:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+}
+
+
 #inicio {
     padding: 50px 20px;
     display: flex;
@@ -94,10 +125,11 @@
     transition: all 0.3s;
 }
 
-#boton-buscar:hover{
+#boton-buscar:hover {
     background-color: #e68a00;
     transform: translateY(-2px);
 }
+
 #resultado {
     display: flex;
     flex-wrap: wrap;
@@ -148,4 +180,44 @@
     .pelicula {
         width: 100%;
     }
+}
+
+#contacto {
+    background-color: #1e1e1e;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    list-style: none;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.footer-link {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+#contacto h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.footer-link li a {
+    text-decoration: none;
+    color: #ff9900;
+    font-weight: 500;
+    transition: color 0.3;
+}
+
+.footer-link li a:hover {
+    color: #ff2600;
 }
